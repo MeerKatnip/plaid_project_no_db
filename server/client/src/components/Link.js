@@ -13,7 +13,8 @@ const Link = props => {
   }
   
   const onSuccess = (token, metadata) =>{
-    console.log('onSuccess', token, metadata);
+    //console.log('onSuccess', token, metadata);
+    props.getAccessToken(token)
   }
 
 
